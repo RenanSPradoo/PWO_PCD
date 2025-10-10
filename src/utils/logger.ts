@@ -1,6 +1,6 @@
 //importação de depencias em nosso projeto
 import express from "express";
-import cros from "cors";
+import cors from "cors";
 import dotenv from 'dotenv'
 dotenv.config()
 
@@ -43,7 +43,4 @@ app.listen(PORT, () => {
   //.listem representa em qual porta virtual, o servidor será aberto
   console.log(`Servidor rodando em http://localhost:${PORT}`);
 });
-function cors(): any {
-  throw new Error("Function not implemented.");
-}
 
