@@ -4,12 +4,9 @@
   "description": "PWO para PCD",
   "main": "index.js",
   "type": "module",
-  "scripts": {
+  "scripts": {  
     "build": "tsc",
-    "start": "tsc && cross-env node --watch build/index.js",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "start": "cross-env node --watch build/index.js"
   },
   "repository": {
     "type": "git",
