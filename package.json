@@ -4,10 +4,11 @@
   "description": "PWO para PCD",
   "main": "index.js",
   "type": "module",
-  "scripts": {  
+  "scripts": {
     "build": "tsc",
-    "start": "cross-env node --watch build/index.js"
-  },
+    "start": "cross-env node --watch build/index.js",
+    "dev": "nodemon --exec node --loader ts-node/esm src/index.ts"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DiegoHenriqueMelo/APL_PCD_API.git"
@@ -21,14 +22,18 @@
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
-    "@types/node": "^24.2.1",
+    "@types/node": "^24.7.2",
     "@types/pg": "^8.15.4",
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "nodemon": "^3.1.10",
     "pg": "^8.16.3",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "sequelize": "^6.37.7"
   }
 }
