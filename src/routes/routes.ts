@@ -6,13 +6,13 @@ export let create_usuario_Empresa:string = '/criarUsuarioEmpresa'
 export let post_create_candidato:string = '/post/criarCandidato'
 export let get_create_candidatos:string = '/get/criarCandidato'
 export let delete_create_candidatos:string = '/delete/candidato/:id'
-export let update_create_candidato:string = '/update/candidade/:id'
+export let put_create_candidato:string = '/update/candidade/:id'
 
 //Rotas para empresa
 export let post_create_empresa: string = "/post/empresa"
 export let get_create_empresa: string = "/get/empresa"
 export let delete_create_empresa: string = "/delete/empresa/:id"
-export let update_create_empresa: string = "/update/empresa/:id"
+export let put_create_empresa: string = "/update/empresa/:id"
 
 //Rotas de acessibilidade
 export let post_create_acessibilidade: string = "/post/acessibilidade"
@@ -23,5 +23,5 @@ export let post_create_subtipo: string = "/post/subtipo"
 export let post_create_vaga: string = "/post/vaga/:id"
 export let candidatar_create_vaga: string = "/post/cadidato/vaga/:id"
 export let get_create_vagas: string = "/get/vaga"
-export let update_create_vaga: string = "/update/vaga/:id"
+export let put_create_vaga: string = "/update/vaga/:id"
 export let delete_create_vaga: string = "/delete/vaga/:id"

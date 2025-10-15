@@ -4,8 +4,17 @@ export let qualquerFuncao = async():Promise<any> =>{
     return "teste"
 }
 
-export let createUser = async(body:any):Promise<any> =>{
-    let usuario = await Repository.create(body)
-    return usuario
+export let createAcessibilidade = async(body:any):Promise<any> =>{
+    let acessibilidade = await Repository.createAcessibilidade(body)
+    return acessibilidade
 }
 
+export let createBarreira = async(body:any):Promise<any> =>{
+    let barreira = await Repository.createBarreira(body)
+    return barreira
+}
+
+export let createSubtipo = async(body:any):Promise<any> =>{
+    let subtipo = await Repository.createSubtipo(body)
+    return subtipo
+}
