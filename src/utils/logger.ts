@@ -14,6 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+//Rotas usuario/login
 export let conectServ = (PORT: number) => {
   app.listen(PORT, () => {
     //.listem representa em qual porta virtual, o servidor será aberto
@@ -27,6 +28,7 @@ export let conectServ = (PORT: number) => {
     res.status(200).send("Http, Feito com sucesso!");
   });
 
+  // Rotas Candidato
   app.post(Routes.post_create_candidato, async (req, res) => {
     let body = req.body;
     let retorno = await ControllerCandidato.create(body);
@@ -54,6 +56,7 @@ export let conectServ = (PORT: number) => {
     res.status(200).send(retorno);
   });
 
+  //Rotas Empresa
   app.post(Routes.post_create_empresa, async (req, res) => {
     let body = req.body;
     let retorno = await ControllerEmpresa.create(body);
@@ -81,6 +84,7 @@ export let conectServ = (PORT: number) => {
     res.status(200).send(retorno);
   });
 
+  // Rotas Acessibilidade
   app.post(Routes.post_create_acessibilidade, async (req, res) => {
     let body = req.body;
     let retorno = await Controller.createAcessibilidade(body);

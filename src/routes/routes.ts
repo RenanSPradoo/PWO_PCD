@@ -3,10 +3,10 @@ export let create_usuario:string = '/criarUsuario'
 export let create_usuario_Empresa:string = '/criarUsuarioEmpresa'
 
 //Rotas para o Candidato
-export let post_create_candidato:string = '/post/criarCandidato'
-export let get_create_candidatos:string = '/get/criarCandidato'
+export let post_create_candidato:string = '/post/candidato'
+export let get_create_candidatos:string = '/get/candidato'
 export let delete_create_candidatos:string = '/delete/candidato/:id'
-export let put_create_candidato:string = '/update/candidade/:id'
+export let put_create_candidato:string = '/update/candidato/:id'
 
 //Rotas para empresa
 export let post_create_empresa: string = "/post/empresa"
